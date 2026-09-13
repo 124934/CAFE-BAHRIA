@@ -160,7 +160,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </ul>
           </div>
 
-          {/* Column 4: Contact & Timings */}
+          {/* Column 4: Contact & Location */}
           <div>
             <h4
               className="text-white text-base font-bold uppercase tracking-wider mb-4 border-l-2 border-[#C48F56] pl-2.5"
@@ -178,10 +178,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 <a href={`tel:${CAFE_INFO.phone}`} className="hover:text-white font-mono">
                   {CAFE_INFO.phone}
                 </a>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <Clock className="w-4 h-4 text-[#D4A373] shrink-0" />
-                <span>Open Daily: 10:00 AM – 01:00 AM</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#D4A373] shrink-0" />

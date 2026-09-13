@@ -49,14 +49,21 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1.5 sm:gap-4 text-center sm:text-left">
           <div className="flex items-center gap-2 text-[11px] sm:text-xs">
             <MapPin className="w-3.5 h-3.5 text-[#D4A373] shrink-0" />
-            <span>Commercial Hub, Precinct 1, Bahria Town Karachi</span>
+            <span>Bahria Town Karachi</span>
           </div>
 
-          <div className="flex items-center gap-4 text-[11px] sm:text-xs">
-            <div className="hidden md:flex items-center gap-1.5 text-[#C48F56]">
-              <Clock className="w-3.5 h-3.5" />
-              <span>Open Daily: 10:00 AM – 01:00 AM</span>
-            </div>
+          <div className="flex items-center gap-3 sm:gap-4 text-[11px] sm:text-xs">
+            <button
+              onClick={() => {
+                onNavigate('home');
+                setTimeout(() => {
+                  document.getElementById('official-video-section')?.scrollIntoView({ behavior: 'smooth' });
+                }, 150);
+              }}
+              className="inline-flex items-center gap-1 text-[#D4A373] hover:text-white transition-colors bg-white/10 hover:bg-white/20 px-2.5 py-0.5 rounded-full font-medium"
+            >
+              <span>🎬 Watch Video (ویڈیو دیکھیں)</span>
+            </button>
             <a
               href={`tel:${CAFE_INFO.phone}`}
               className="flex items-center gap-1 text-[#EAD8C7] hover:text-[#D4A373] transition-colors"

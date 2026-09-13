@@ -3,6 +3,7 @@ import mainMenuImg from '../assets/images/regenerated_image_1789281488380.jpg';
 import coffeeSteakImg from '../assets/images/regenerated_image_1789281491259.jpg';
 import cafeLogoImg from '../assets/images/regenerated_image_1789282708688.png';
 import cafeOverviewImg from '../assets/images/cafe_bahria_overview_poster_1789283410804.jpg';
+import ourInfoImg from '../assets/images/our_info_card_1789284548616.jpg';
 
 export const CAFE_INFO = {
   name: 'Cafe Bahria',
@@ -18,6 +19,7 @@ export const CAFE_INFO = {
   city: 'Karachi, Pakistan',
   logo: cafeLogoImg,
   overviewPoster: cafeOverviewImg,
+  ourInfoImage: ourInfoImg,
   timings: {
     weekdays: '10:00 AM – 01:00 AM',
     weekends: '10:00 AM – 02:00 AM',
@@ -25,7 +27,7 @@ export const CAFE_INFO = {
   email: 'info@cafebahria.pk',
 };
 
-// Core showcase items: Main Menu, Coffee Cuisine Steak, and Cafe Bahria Overview (Our Info removed per user instruction)
+// Core showcase items: Main Menu, Coffee Cuisine Steak, and Our Info
 export const SHOWCASE_ITEMS: ShowcaseMedia[] = [
   {
     id: 'media-1',
@@ -46,12 +48,12 @@ export const SHOWCASE_ITEMS: ShowcaseMedia[] = [
     badge: 'Specialty Sizzlers & Brews',
   },
   {
-    id: 'media-overview',
-    title: 'Cafe Bahria Overview',
-    caption: 'Good Coffee • Good Food • Great Mood. Hospital Commercial, Bahria Town Karachi. Rehan Qaiser (03099911227).',
+    id: 'media-our-info',
+    title: 'Our Info',
+    caption: 'Hospital Commercial, Bahria Town Karachi. Coffee, Steaks, Gourmet Cuisine & Hospitality. Contact: 0309-9911227.',
     type: 'image',
-    url: cafeOverviewImg,
-    posterUrl: cafeOverviewImg,
+    url: ourInfoImg,
+    posterUrl: ourInfoImg,
     targetPage: 'about',
     badge: 'Hospital Commercial',
   },
@@ -310,7 +312,7 @@ export const MENU_ITEMS: MenuItem[] = [
 export const TESTIMONIALS = [
   {
     name: 'Hamza Farooqi',
-    role: 'Bahria Town Precinct 1 Resident',
+    role: 'Bahria Town Karachi Resident',
     comment: 'Cafe Bahria has completely raised the standard of dining in Bahria Town Karachi. The steaks are succulent and the Spanish Latte is unrivaled!',
     rating: 5,
   },

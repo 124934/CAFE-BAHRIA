@@ -11,7 +11,22 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ onNavigate }) => {
   const [selectedItem, setSelectedItem] = useState<(typeof SHOWCASE_ITEMS)[0] | null>(null);
   const [filter, setFilter] = useState<'all' | 'image' | 'video'>('all');
 
-  const filteredItems = SHOWCASE_ITEMS.filter((item) => {
+  const ALL_GALLERY_ITEMS = [
+    ...SHOWCASE_ITEMS,
+    {
+      id: 'gallery-official-video',
+      title: 'Cafe Bahria Official Launch Video',
+      caption: 'Official promotional introduction to Cafe Bahria at Hospital Commercial, Bahria Town Karachi. Good Food • Great Coffee • Better Moments.',
+      type: 'video' as const,
+      url: '/cafe_bahria_video.mp4',
+      videoUrl: '/cafe_bahria_video.mp4',
+      posterUrl: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80',
+      targetPage: 'home' as const,
+      badge: 'Official Launch Video (باضابطہ ویڈیو)',
+    },
+  ];
+
+  const filteredItems = ALL_GALLERY_ITEMS.filter((item) => {
     if (filter === 'all') return true;
     if (filter === 'video') return Boolean(item.videoUrl || item.type === 'video');
     return item.type === 'image';

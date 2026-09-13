@@ -205,20 +205,6 @@ export const ContactPage: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-xl bg-white/10 text-[#D4A373] shrink-0">
-                    <Clock className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <span className="text-xs text-[#D4A373] font-semibold block">Operating Hours</span>
-                    <p className="text-white font-mono text-xs">
-                      Mon – Thu: {CAFE_INFO.timings.weekdays}
-                    </p>
-                    <p className="text-white font-mono text-xs mt-0.5">
-                      Fri – Sun: {CAFE_INFO.timings.weekends}
-                    </p>
-                  </div>
-                </div>
               </div>
 
               <div className="pt-2">
@@ -243,7 +229,7 @@ export const ContactPage: React.FC = () => {
                   </h4>
                 </div>
                 <span className="text-xs px-2.5 py-0.5 rounded-full bg-[#F2E8DF] text-[#8C5D35] font-semibold">
-                  Precinct 1
+                  Bahria Town Karachi
                 </span>
               </div>
 
@@ -260,7 +246,7 @@ export const ContactPage: React.FC = () => {
                     Bahria Town Karachi Hub
                   </h5>
                   <p className="text-xs text-[#735A4C] max-w-xs">
-                    Located on Main Commercial Boulevard, easily accessible from Super Highway Entrance & Precinct 1 roundabout.
+                    Located in Bahria Town Karachi, welcoming you with fresh coffee, gourmet dining, and warm ambiance.
                   </p>
                 </div>
               </div>

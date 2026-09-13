@@ -151,10 +151,10 @@ export const MediaShowcase: React.FC<MediaShowcaseProps> = ({ onNavigate }) => {
             </div>
           )}
 
-          {/* Card 3: Cafe Bahria Overview (With New User Image) */}
+          {/* Card 3: Our Info (Brand, Location & Contact) */}
           {images[2] && (
             <div
-              id="showcase-card-overview"
+              id="showcase-card-our-info"
               className="group bg-[#FFFFFF] rounded-2xl overflow-hidden border-2 border-[#D4A373] shadow-md hover:shadow-2xl hover:border-[#8C5D35] transition-all duration-300 flex flex-col relative"
             >
               {/* Highlight ribbon */}
@@ -163,7 +163,7 @@ export const MediaShowcase: React.FC<MediaShowcaseProps> = ({ onNavigate }) => {
                 <span>Hospital Commercial</span>
               </div>
 
-              {/* Image Container with the exact image provided by user */}
+              {/* Image Container */}
               <div
                 className="relative h-64 sm:h-72 overflow-hidden bg-[#150B07] flex items-center justify-center p-2 cursor-pointer group/img"
                 onClick={() => setPreviewImage({ url: images[2].url, title: images[2].title, caption: images[2].caption })}
@@ -176,7 +176,7 @@ export const MediaShowcase: React.FC<MediaShowcaseProps> = ({ onNavigate }) => {
 
                 <div className="absolute top-3 left-3 bg-[#2C1810]/90 backdrop-blur-md text-[#F4ECE4] px-2.5 py-1 rounded-lg text-xs font-semibold flex items-center gap-1.5 border border-white/10">
                   <Image className="w-3.5 h-3.5 text-[#D4A373]" />
-                  <span>Overview</span>
+                  <span>Our Info</span>
                 </div>
 
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -186,7 +186,7 @@ export const MediaShowcase: React.FC<MediaShowcaseProps> = ({ onNavigate }) => {
                 </div>
               </div>
 
-              {/* Exact Text Underneath: "cafe bahria overview" */}
+              {/* Text Underneath: "Our Info" */}
               <div className="p-5 sm:p-6 flex flex-col flex-grow justify-between bg-white">
                 <div>
                   <h3
@@ -211,7 +211,7 @@ export const MediaShowcase: React.FC<MediaShowcaseProps> = ({ onNavigate }) => {
                     className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#8C5D35] hover:text-[#522E1B] transition-colors"
                   >
                     <Eye className="w-4 h-4 text-[#8C5D35]" />
-                    <span>View Full Poster</span>
+                    <span>View Info Card</span>
                   </button>
 
                   <button

@@ -142,12 +142,12 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           </div>
         </div>
 
-        {/* Location & Timings Card */}
+        {/* Location & Hospitality Card */}
         <div className="bg-[#24140D] rounded-3xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
             <div>
               <span className="text-xs uppercase tracking-widest text-[#D4A373] font-bold block mb-2">
-                Our Exact Location
+                Our Location
               </span>
               <h4 className="text-xl font-bold font-serif mb-2">{CAFE_INFO.name}</h4>
               <p className="text-sm text-[#D1BFAE] leading-relaxed">
@@ -160,28 +160,12 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
 
             <div>
               <span className="text-xs uppercase tracking-widest text-[#D4A373] font-bold block mb-2">
-                Operating Hours
-              </span>
-              <div className="space-y-2 text-sm text-[#D1BFAE]">
-                <div className="flex justify-between border-b border-white/10 pb-1">
-                  <span>Mon – Thu:</span>
-                  <span className="font-mono text-white">{CAFE_INFO.timings.weekdays}</span>
-                </div>
-                <div className="flex justify-between border-b border-white/10 pb-1">
-                  <span>Fri – Sun:</span>
-                  <span className="font-mono text-white">{CAFE_INFO.timings.weekends}</span>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <span className="text-xs uppercase tracking-widest text-[#D4A373] font-bold block mb-2">
-                Direct Contact
+                Direct Contact & Orders
               </span>
               <div className="space-y-3">
                 <a
                   href={`tel:${CAFE_INFO.phone}`}
-                  className="block font-mono text-lg font-bold text-white hover:text-[#D4A373]"
+                  className="block font-mono text-xl font-bold text-white hover:text-[#D4A373]"
                 >
                   {CAFE_INFO.phone}
                 </a>
@@ -189,9 +173,9 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                   href={getWhatsAppOrderLink()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#25D366] text-white font-bold text-xs shadow hover:brightness-105"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#25D366] text-white font-bold text-xs shadow hover:brightness-105"
                 >
-                  <span>Chat on WhatsApp (+923099911227)</span>
+                  <span>Chat on WhatsApp (0309-9911227)</span>
                 </a>
               </div>
             </div>
