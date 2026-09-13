@@ -1,0 +1,6 @@
+{
+  "name": "Cafe Bahria",
+  "description": "Premium café and restaurant located in Bahria Town, Karachi, Pakistan offering gourmet coffee, cuisine, steaks, and direct WhatsApp ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
